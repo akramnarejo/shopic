@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightsteelblue;
+  padding: 0.5em 1em;
+  font-size: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+nav a:first-child {
+  font-weight: 900;
+}
+footer {
+  background: #102020;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 1em;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout i {
+  position: relative;
+  font-size: 2rem;
+}
+.totalCartItems {
+  position: absolute;
+  right: 30px;
+  top: 7px;
+  font-weight: 900;
+  font-size: 0.7rem !important;
+}
+.checkout small {
+  margin-right: 0.2em;
+  font-size: 1.1rem;
+}
+.photos {
+  display: grid;
+  grid-gap: 2px;
+  grid-auto-rows: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-flow: dense;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-container {
+  position: relative;
+}
+.favorite {
+  color: crimson;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+.cart {
+  color: darkseagreen;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.cart-container {
+  padding: 1em 0;
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.total-amount {
+  font-size: 1.5rem;
+  display: flex;
+  align-self: flex-end;
+  margin: 0 1.2em;
+  margin-bottom: 1em;
+}
+.order-btn {
+  font-size: 1.4rem;
+  width: 100%;
+  margin-bottom: 4em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+.item-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0.25em 0;
+  align-items: center;
+  padding: 0.5em 2em;
+  background-color: linen;
+  border-radius: 5px;
+  border: 1px solid blanchedalmond;
+}
+
+.img-delbtn {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+.img-delbtn img {
+  width: 150px;
+  height: 120px;
+}
+
+.order-amount h2 {
+  font-weight: 300;
+}
+
+i {
+  cursor: pointer;
+}
+
+.message {
+  font-size: 1.5rem;
+}
